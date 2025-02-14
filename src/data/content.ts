@@ -35,7 +35,7 @@ export const HERO_SECTION = {
   subtitle: "Добро пожаловать в наш колледж",
   date: "15 февраля 2025",
   time: "11:00",
-  backgroundImage: "/logo.png"
+  backgroundImage: "/images/logo.png"
 };
 
 export const ABOUT_SECTION = {
@@ -94,7 +94,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Социальная сеть для студентов KSMess",
       description: "Социальная сеть для студентов и преподавателей Колледжа связи №54. Приложение позволяет просматривать расписание с учетом замен в удобном формате, общаться в чатах, просматривать вакансии и новости Колледжа.",
-      imageUrl: "src/images/ksmess/preview.png",
+      imageUrl: "/images/ksmess/preview.png",
       students: [
         { name: "Хасанов Альберт", group: "3ИСП9-13" },
         { name: "Хасанов Георгий", group: "3ИСП9-13" }
@@ -104,7 +104,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Веб-сервис по созданию ведомостей для отделения ИКТ",
       description: "Необходимо разработать сервис, который поможет в создании зачетных и экзаменационных ведомостей.",
-      imageUrl: "src/images/ikt54/preview.png",
+      imageUrl: "/images/ikt54/preview.png",
       students: [
         { name: "Шалагинов Даниил", group: "4ИСП9-8" },
         { name: "Коротков Павел", group: "4ИСП9-8" },
@@ -116,7 +116,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Веб-сайт для городского Хакатона \"PRO Поколение IT\"",
       description: "Хакатон \"Поколение IT\" - это мероприятие для веб-разработчиков из всех регионов, которое проводится несколько раз в год. Организовано Департаментом образования Москвы и московскими колледжами.",
-      imageUrl: "src/images/hackpro/preview.png",
+      imageUrl: "/images/hackpro/preview.png",
       students: [
         { name: "Шалагинов Даниил", group: "4ИСП9-8" },
         { name: "Коротков Павел", group: "4ИСП9-8" },
@@ -128,7 +128,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Чат-бот MosObrBot",
       description: "MosObrBot - телеграм бот, разработанный в рамках участия в Хакатоне \"Поколение IT 2022\". Основной функционал: помощь абитуриентам в поиске образовательных организаций города Москвы и полезной информации о них.",
-      imageUrl: "src/images/MosObrBot/preview.png",
+      imageUrl: "/images/MosObrBot/preview.png",
       students: [
         { name: "Максимов Кирилл", group: "2ИСП9-20" },
         { name: "Щиголев Сергей", group: "3ИСП11-15" },
@@ -140,7 +140,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Мобильное приложение для планирования - Обратный отсчет",
       description: "Приложение \"Осталось до\" - очень простой в использовании таймер обратного отсчета, который напоминает о важных событиях и датах в вашей жизни.",
-      imageUrl: "src/images/CountTo/preview.png",
+      imageUrl: "/images/CountTo/preview.png",
       students: [
         { name: "Хасанов Альберт", group: "3ИСП9-13" },
         { name: "Хасанов Георгий", group: "3ИСП9-13" }
@@ -150,7 +150,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Сервис волонтеров \"Volunvice\"",
       description: "Volunvice - сервис по размещению и поиску задач для волонтеров. По задумке, проект будет облегчать доступность к участию в важных общественных мероприятиях в городском сообществе. Активные граждане смогут оказывать благотворительные услуги, направленные на улучшение жизни людей, города.",
-      imageUrl: "src/images/Volunvice/preview.png",
+      imageUrl: "/images/Volunvice/preview.png",
       students: [
         { name: "Алеев Егор", group: "4ИСП9-8" }
       ],
@@ -159,7 +159,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Сервис для путешествий \"Loctravel\"",
       description: "\"Loctravel\" - портал для путешественников и жителей Москвы, для помощи в развитии регионального туризма.",
-      imageUrl: "src/images/Loctravel/preview.png",
+      imageUrl: "/images/Loctravel/preview.png",
       students: [
         { name: "Алеев Егор", group: "4ИСП9-8" }
       ],
@@ -168,7 +168,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Приложение «Новостная лента»",
       description: "Приложение работает как интерфейс для автоматизированного создания новостной ленты по предпочтениям пользователя. В рамках проекта реализованы как настольная версия приложения, так и мобильная.",
-      imageUrl: "src/images/NewsList/preview.png",
+      imageUrl: "/images/NewsList/preview.png",
       students: [
         { name: "Лазарев Никита", group: "4ИСП9-3" }
       ],
@@ -177,7 +177,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Приложение для компании, осуществляющей услуги по проведению авиа-прогулок",
       description: "Автоматизированная система предназначена для оптимизации работы сотрудников компании и поддерживает такой функционал как: просмотр списка услуг, учет клиентов, создание заказа, просмотр расписания тренера.",
-      imageUrl: "src/images/AirWalks/preview.png",
+      imageUrl: "/images/AirWalks/preview.png",
       students: [
         { name: "Аралбаева Камилла", group: "4ИСП9-3" }
       ],
@@ -186,7 +186,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Информационная база для ведения хозяйственной деятельности медицинского учреждения",
       description: "В данной информационной базе в полном объеме реализован пример ведения хозяйственной деятельности клиники.",
-      imageUrl: "src/images/1C-2/preview.png",
+      imageUrl: "/images/1C-2/preview.png",
       students: [
         { name: "Ганюшкин Дмитрий", group: "3ИСП11-15" }
       ],
@@ -195,7 +195,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Информационная система для малых торговых предприятий",
       description: "Информационная база для небольших организаций, занимающихся продажей товаров. В данной конфигурации предусмотрена возможность регистрировать заказ товаров. В системе хранятся данные обо всех покупателях и поставщиках, а именно: полное наименование организации, ИНН, расчетный счет.",
-      imageUrl: "src/images/1C-1/preview.png",
+      imageUrl: "/images/1C-1/preview.png",
       students: [
         { name: "Семенова Екатерина", group: "4ИСП9-8" }
       ],
@@ -204,7 +204,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Мобильная игра Callidus",
       description: "Мобильная игра, обучающая детей финансовой грамотности.",
-      imageUrl: "src/images/Callidus/preview.png",
+      imageUrl: "/images/Callidus/preview.png",
       students: [
         { name: "Абакумова Анастасия", group: "2ИСП11-20" },
         { name: "Дмитрий Демьяновский", group: "4ИСП9-8" }
@@ -214,7 +214,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Сайт для студентов колледжа и преподавателей StudentDiary",
       description: "Удобное, стильное и минималистичное веб-приложение для повышения продуктивности, предназначенное для управления временем и задачами. Вы можете легко создавать, удалять и редактировать задачи, устанавливать приоритеты и сроки выполнения, а также добавлять подзадачи для более детального описания.",
-      imageUrl: "src/images/StudentDiary/preview.png",
+      imageUrl: "/images/StudentDiary/preview.png",
       students: [
         { name: "Сахневич Иван", group: "2ИСП9-27" }
       ],
@@ -223,7 +223,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Сайт по ресейлу одежды с POIZON",
       description: "Сайт автоматизирует процесс оформления заказов.\nБлагодаря сайту, вы можете узнавать местонахождение своего заказа, не писав посреднику, а просто набрав в поиск свой трек-номер, где будет выведен статус заказа.\nНа сайте вы можете узнать актуальный курс юаня, в стоимость которого включена комиссия посредника",
-      imageUrl: "src/images/Poizon/preview.png",
+      imageUrl: "/images/Poizon/preview.png",
       students: [
         { name: "Мартиросян Галуст", group: "3ИСП9-16" }
       ],
@@ -232,7 +232,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Игра \"The Great Knights\"",
       description: "Ролевая игра, которая создается на подобии Final fantasy 4. В ней будет открытый мир с сюжетом и побочными заданиями которые будут выдаваться различными NPC.",
-      imageUrl: "src/images/TheGreatKnights/preview.png",
+      imageUrl: "/images/TheGreatKnights/preview.png",
       students: [
         { name: "Алпатов Сергей", group: "3ИСП9-17" },
         { name: "Горгадзе Василий", group: "3ИСП9-17" },
@@ -243,7 +243,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Мобильное приложение \"Кулинарный форум\"",
       description: "Приложение, в котором пользователи могут обмениваться рецептами, оставлять комментарии, сохранять их в избранном.",
-      imageUrl: "src/images/EatForum/preview.png",
+      imageUrl: "/images/EatForum/preview.png",
       students: [
         { name: "Лексиков Марк", group: "4ИСП9-7" }
       ],
@@ -252,7 +252,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Мобильное приложение для изучения периодической системы химических элементов",
       description: "Мобильное приложение чтобы облегчить изучение химических элементов, сделать его максимально наглядным и интерактивным.",
-      imageUrl: "src/images/SysChemEls/preview.png",
+      imageUrl: "/images/SysChemEls/preview.png",
       students: [
         { name: "Волынаев Даниил", group: "4ИСП9-6" }
       ],
@@ -261,7 +261,7 @@ export const PROJECTS_SECTION = {
     {
       title: "Телебот Bot Meeting",
       description: "Робот телеприсутствия, позволяющий перемещаться и вести видеоконференцию в онлайн режиме через компьютер или телефон.",
-      imageUrl: "src/images/BotMeeting/preview.png",
+      imageUrl: "/images/BotMeeting/preview.png",
       students: [
         { name: "Кравченко Иван", group: "1ИСП9-30" },
         { name: "Бирюков Даниил", group: "3ИСП11-15" },
