@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaVk, FaTelegram, FaGlobe, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaVk, FaTelegram, FaGlobe, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowRight } from 'react-icons/fa';
 import { HERO_SECTION, ABOUT_SECTION, PROJECTS_SECTION, SOCIAL_SECTION, THEME, NAV_LINKS, SPECIALTIES_SECTION } from './data/content';
 import logo from './data/logo.png';
 import Map from './components/Map';
@@ -212,11 +212,23 @@ const App = () => {
                       </span>
                     ))}
                   </div>
-                  <div className="text-md text-gray-500">
-                    Авторы:
-                    {project.students.map((student, index) => (
-                      <p key={index} className="mt-1">{student.name} - {student.group}</p>
-                    ))}
+                  <div className="flex justify-between items-end">
+                    <div className="text-md text-gray-500">
+                      Авторы:
+                      {project.students.map((student, index) => (
+                        <p key={index} className="mt-1">{student.name} - {student.group}</p>
+                      ))}
+                    </div>
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-xl hover:bg-primary/90 transition-all group"
+                      >
+                        <FaArrowRight className="text-2xl transition-transform group-hover:translate-x-1" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>

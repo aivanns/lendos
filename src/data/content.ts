@@ -4,6 +4,7 @@ export interface ProjectCard {
   imageUrl: string;
   students: Student[];
   tags?: string[];
+  link?: string;
 }
 
 export interface Student {
@@ -79,6 +80,42 @@ export const PROJECTS_SECTION = {
   description: "Лучшие проекты, разработанные нашими студентами в рамках курсовых и дипломных работ",
   projects: [
     {
+      title: "Игровая студия Girlsailor",
+      description: "Наши студенты в рамках своей игровой студии разрабатывают игры для курсовых и дипломных работ, а также хакатонов. Они занимаются разработкой игр на Unity, один из их проектов посвящен комьютерной безопасности, разработанный для школьников и студентов, которые хотят научиться защищать свои устройства от вирусов и взломов.",
+      imageUrl: "/images/Girlsailor/preview.png",
+      students: [
+        { name: "Дружинин Святослав", group: "3ИСП11-27" },
+        { name: "Мамедова Алла", group: "3ИСП11-27" },
+        { name: "Васильева Софья", group: "3ИСП11-27" },
+      ],
+      tags: ["Unity", "C#", "WebGL", "itch.io"],
+      link: "https://girlsailor.itch.io/"
+    },
+    {
+      title: "Игра \"The Smart Way\"",
+      description: "Игра разработанная в рамках конкурса \"Школа будущего 2024\" и занявшая первое место. Её главная цель - научить детей математике в игровой форме. Игра представляет собой увлекательное приключение, где для продвижения по сюжету нужно решать математические задачи разной сложности. Игроки проходят математические квесты для продвижения по сюжету.",
+      imageUrl: "/images/TheSmartWay/preview.jpg",
+      students: [
+        { name: "Деменьтев Максим", group: "2-ИСП9-43" },
+        { name: "Исаев Вячеслав", group: "2-ИСП9-43" },
+      ],
+      tags: ["Unity", "C#", "WebGL", "itch.io"],
+      link: "https://zyxel91.itch.io/thesmartway"
+    },
+    {
+      title: "Чат-бот MosObrBot",
+      description: "MosObrBot - телеграм бот, разработанный в рамках участия в Хакатоне \"Поколение IT 2022\". Основной функционал: помощь абитуриентам в поиске образовательных организаций города Москвы и полезной информации о них.",
+      imageUrl: "/images/MosObrBot/preview.png",
+      students: [
+        { name: "Максимов Кирилл", group: "2ИСП9-20" },
+        { name: "Щиголев Сергей", group: "3ИСП11-15" },
+        { name: "Заварзина Татьяна", group: "3ИСП11-15" },
+        { name: "Бирюков Даниил", group: "3ИСП11-15" }
+      ],
+      link: "https://t.me/MosRS_Bot",
+      tags: ["Python", "PostgreSQL", "PHP", "Selenium", "Bash", "Docker"]
+    },
+    {
       title: "Социальная сеть для студентов KSMess",
       description: "Социальная сеть для студентов и преподавателей Колледжа связи №54. Приложение позволяет просматривать расписание с учетом замен в удобном формате, общаться в чатах, просматривать вакансии и новости Колледжа.",
       imageUrl: "/images/ksmess/preview.png",
@@ -86,6 +123,18 @@ export const PROJECTS_SECTION = {
         { name: "Хасанов Альберт", group: "3ИСП9-13" },
         { name: "Хасанов Георгий", group: "3ИСП9-13" }
       ],
+      tags: ["Flutter", "Dart", "FireBase"],
+      link: "https://apps.apple.com/ru/app/ksmess/id6446104181"
+    },
+    {
+      title: "Мобильное приложение для планирования - Обратный отсчет",
+      description: "Приложение \"Осталось до\" - очень простой в использовании таймер обратного отсчета, который напоминает о важных событиях и датах в вашей жизни.",
+      imageUrl: "/images/CountTo/preview.png",
+      students: [
+        { name: "Хасанов Альберт", group: "3ИСП9-13" },
+        { name: "Хасанов Георгий", group: "3ИСП9-13" }
+      ],
+      link: "https://play.google.com/store/apps/details?id=com.itadss.todo.todo_app",
       tags: ["Flutter", "Dart", "FireBase"]
     },
     {
@@ -111,28 +160,6 @@ export const PROJECTS_SECTION = {
         { name: "Сафонов Иван", group: "4ИСП9-8" }
       ],
       tags: ["JavaScript", "React", "Sass", "Redux", "ExpressJS", "MySQL"]
-    },
-    {
-      title: "Чат-бот MosObrBot",
-      description: "MosObrBot - телеграм бот, разработанный в рамках участия в Хакатоне \"Поколение IT 2022\". Основной функционал: помощь абитуриентам в поиске образовательных организаций города Москвы и полезной информации о них.",
-      imageUrl: "/images/MosObrBot/preview.png",
-      students: [
-        { name: "Максимов Кирилл", group: "2ИСП9-20" },
-        { name: "Щиголев Сергей", group: "3ИСП11-15" },
-        { name: "Заварзина Татьяна", group: "3ИСП11-15" },
-        { name: "Бирюков Даниил", group: "3ИСП11-15" }
-      ],
-      tags: ["Python", "PostgreSQL", "PHP", "Selenium", "Bash", "Docker"]
-    },
-    {
-      title: "Мобильное приложение для планирования - Обратный отсчет",
-      description: "Приложение \"Осталось до\" - очень простой в использовании таймер обратного отсчета, который напоминает о важных событиях и датах в вашей жизни.",
-      imageUrl: "/images/CountTo/preview.png",
-      students: [
-        { name: "Хасанов Альберт", group: "3ИСП9-13" },
-        { name: "Хасанов Георгий", group: "3ИСП9-13" }
-      ],
-      tags: ["Flutter", "Dart", "FireBase"]
     },
     {
       title: "Сервис волонтеров \"Volunvice\"",
