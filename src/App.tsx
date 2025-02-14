@@ -159,7 +159,7 @@ const App = () => {
       </section>
 
       {/* Specialties Section */}
-      <section id="specialties" className="bg-gray-50 py-20">
+      <section id="specialties" className="bg-gray-50 py-10">
         <div className={`${THEME.container.maxWidth} mx-auto ${THEME.container.padding}`}>
           <h2 className="text-4xl font-bold text-center text-primary mb-12">{SPECIALTIES_SECTION.title}</h2>
           <div className="flex items-center justify-center">
