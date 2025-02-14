@@ -162,7 +162,7 @@ const App = () => {
       <section id="specialties" className="bg-gray-50 py-20">
         <div className={`${THEME.container.maxWidth} mx-auto ${THEME.container.padding}`}>
           <h2 className="text-4xl font-bold text-center text-primary mb-12">{SPECIALTIES_SECTION.title}</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="flex items-center justify-center">
             {SPECIALTIES_SECTION.specialties.map((specialty, index) => (
               <motion.div
                 key={index}
@@ -174,7 +174,6 @@ const App = () => {
                 <div className="text-secondary font-mono mb-2">{specialty.code}</div>
                 <h3 className="text-xl font-bold text-primary mb-3">{specialty.title}</h3>
                 <p className="text-gray-600 mb-4">{specialty.description}</p>
-                <div className="text-sm text-gray-500">{specialty.duration}</div>
               </motion.div>
             ))}
           </div>
