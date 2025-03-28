@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaVk, FaTelegram, FaGlobe, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowRight } from 'react-icons/fa';
-import { HERO_SECTION, ABOUT_SECTION, PROJECTS_SECTION, SOCIAL_SECTION, THEME, NAV_LINKS, SPECIALTIES_SECTION } from './data/content';
+import { HERO_SECTION, PROJECTS_SECTION, SOCIAL_SECTION, THEME, NAV_LINKS, SPECIALTIES_SECTION } from './data/content';
 import logo from './data/logo.png';
 import Map from './components/Map';
 
@@ -58,16 +58,17 @@ const App = () => {
         backgroundPosition: 'center'
       }}>
         <div className="absolute inset-0 bg-primary/90 backdrop-blur-sm" />
+        <div className="absolute top-20 left-0 right-0 text-center text-white z-10">
+          <h2 className="text-3xl font-bold text-white mb-2">Информационно-коммуникационные технологии</h2>
+          <p className="text-xl text-white/90">Специальность 09.02.07 Информационные системы и программирование</p>
+        </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="relative text-center text-white z-10 px-4"
         >
-          <div className="my-8">
-            <img src={logo} alt="KS54" className="h-32 mx-auto mb-6" />
-          </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">{HERO_SECTION.title}</h1>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 mt-40">{HERO_SECTION.title}</h1>
           <p className="text-2xl md:text-3xl mb-8">{HERO_SECTION.subtitle}</p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-xl">
             <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-lg border border-white/10">
@@ -112,51 +113,7 @@ const App = () => {
         </motion.div>
       </header>
 
-      {/* About College Section */}
-      <section id="about" className={`${THEME.container.padding}`}>
-        <div className={`${THEME.container.maxWidth} mx-auto`}>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-4xl font-bold text-center text-primary mb-12 mt-8">{ABOUT_SECTION.title}</h2>
-            <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto mb-16 text-center">
-              {ABOUT_SECTION.description}
-            </p>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-              {ABOUT_SECTION.stats.map((stat, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  className="text-center"
-                >
-                  <div className="text-4xl font-bold text-secondary mb-2">{stat.value}</div>
-                  <div className="text-gray-600">{stat.label}</div>
-                </motion.div>
-              ))}
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {ABOUT_SECTION.features.map((feature, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  className="bg-white p-6 rounded-xl shadow-lg"
-                >
-                  <h3 className="text-xl font-bold text-primary mb-3">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+     
 
       {/* Specialties Section */}
       <section id="specialties" className="bg-gray-50 py-10">
@@ -337,9 +294,9 @@ const App = () => {
       <footer className="bg-footer text-black/80 py-8">
         <div className={`${THEME.container.maxWidth} mx-auto ${THEME.container.padding}`}>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-4">
-              <img src={logo} alt="KS54" className="h-10" />
-              <span className="font-bold text-xl">Колледж связи №54</span>
+            <div className="flex flex-col">
+              <span className="font-bold text-xl">Информационно-коммуникационные технологии</span>
+              <span className="text-lg">Специальность 09.02.07 Информационные системы и программирование</span>
             </div>
             <p className="text-black/70 text-sm text-center md:text-right font-semibold">
               © 2025 Колледж связи №54. Все права защищены.
