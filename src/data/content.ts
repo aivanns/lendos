@@ -34,7 +34,7 @@ export const NAV_LINKS: NavLink[] = [
 export const HERO_SECTION = {
   title: "День открытых дверей",
   subtitle: "Добро пожаловать в наш колледж",
-  date: "29 марта 2025",
+  date: "12 апреля 2025",
   time: "11:00",
   backgroundImage: "/images/logo.png"
 };

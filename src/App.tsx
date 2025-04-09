@@ -3,6 +3,7 @@ import { FaVk, FaTelegram, FaGlobe, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrow
 import { HERO_SECTION, PROJECTS_SECTION, SOCIAL_SECTION, THEME, NAV_LINKS, SPECIALTIES_SECTION } from './data/content';
 import logo from './data/logo.png';
 import Map from './components/Map';
+import QRCode from 'react-qr-code';
 
 const iconComponents = {
   FaVk,
@@ -12,14 +13,17 @@ const iconComponents = {
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" id="about">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md z-50 border-b border-gray-200">
         <div className={`${THEME.container.maxWidth} mx-auto ${THEME.container.padding} py-4`}>
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
               <img src={logo} alt="KS54" className="h-10" />
-              <span className="text-primary font-bold text-xl">Колледж связи №54</span>
+              <div className="flex flex-col">
+                <span className="text-primary font-bold text-xl">Колледж связи №54</span>
+                <span className="text-primary font-semibold text-lg">Отделение ИКТ</span>
+              </div>
             </div>
             <div className="hidden md:flex space-x-8">
               {NAV_LINKS.map((link) => (
@@ -59,8 +63,11 @@ const App = () => {
       }}>
         <div className="absolute inset-0 bg-primary/90 backdrop-blur-sm" />
         <div className="absolute top-20 left-0 right-0 text-center text-white z-10">
-          <h2 className="text-3xl font-bold text-white mb-2">Информационно-коммуникационные технологии</h2>
+          <h2 className="text-3xl font-bold text-white mb-2">Отделение "Информационно-коммуникационные технологии"</h2>
           <p className="text-xl text-white/90">Специальность 09.02.07 Информационные системы и программирование</p>
+          <div className="text-center text-white">
+          <QRCode value="https://ks54.vercel.app/" className="p-4 bg-white rounded-lg mx-auto w-64 h-64 mt-8 hidden md:block" level="M" size={256} />
+        </div>
         </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -68,8 +75,8 @@ const App = () => {
           transition={{ duration: 0.8 }}
           className="relative text-center text-white z-10 px-4"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 mt-40">{HERO_SECTION.title}</h1>
-          <p className="text-2xl md:text-3xl mb-8">{HERO_SECTION.subtitle}</p>
+          <h1 className="text-3xl md:text-7xl font-bold mb-6 mt-80">{HERO_SECTION.title}</h1>
+          <p className="text-xl md:text-3xl mb-8">{HERO_SECTION.subtitle}</p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-xl">
             <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-lg border border-white/10">
               <span className="block font-bold">{HERO_SECTION.date}</span>
@@ -80,7 +87,7 @@ const App = () => {
               <span className="text-white/80">Время</span>
             </div>
           </div>
-          <div className="mt-40 flex justify-center">
+          <div className="mt-20 hidden md:flex justify-center">
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ 
@@ -124,8 +131,8 @@ const App = () => {
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
                 className="bg-white p-6 rounded-xl shadow-lg"
               >
                 <div className="text-secondary font-mono mb-2">{specialty.code}</div>
@@ -147,8 +154,8 @@ const App = () => {
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group h-full flex flex-col"
               >
                 <div className="relative h-64">
