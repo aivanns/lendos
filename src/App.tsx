@@ -66,7 +66,7 @@ const App = () => {
           <h2 className="text-3xl font-bold text-white mb-2">Отделение "Информационно-коммуникационные технологии"</h2>
           <p className="text-xl text-white/90">Специальность 09.02.07 Информационные системы и программирование</p>
           <div className="text-center text-white">
-          <QRCode value="https://ks54.vercel.app/" className="p-4 bg-white rounded-lg mx-auto w-64 h-64 mt-8 hidden md:block" level="M" size={256} />
+          <QRCode value="https://ks54.vercel.app/" className="p-4 bg-white rounded-lg mx-auto w-48 h-48 lg:w-64 lg:h-64 mt-4 lg:mt-8 hidden md:block" level="M" size={256} />
         </div>
         </div>
         <motion.div
@@ -75,7 +75,7 @@ const App = () => {
           transition={{ duration: 0.8 }}
           className="relative text-center text-white z-10 px-4"
         >
-          <h1 className="text-3xl md:text-7xl font-bold mb-6 mt-80">{HERO_SECTION.title}</h1>
+          <h1 className="text-3xl md:text-7xl font-bold mb-6 mt-96 lg:mt-80">{HERO_SECTION.title}</h1>
           <p className="text-xl md:text-3xl mb-8">{HERO_SECTION.subtitle}</p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-xl">
             <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-lg border border-white/10">
